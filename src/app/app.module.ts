@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { JsonViewerComponent } from './json-viewer/json-viewer.component';
+import { ExploreRuleComponent } from './explore-rule/explore-rule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JsonViewerComponent
+    JsonViewerComponent,
+    ExploreRuleComponent
   ],
   imports: [
     BrowserModule,
