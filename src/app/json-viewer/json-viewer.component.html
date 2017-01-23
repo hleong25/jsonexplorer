@@ -1,3 +1,8 @@
-<p>
-  json-viewer works!
-</p>
+<div class="container">
+  <div class="title">{{title}}</div>
+  <pre>{{data | json}}</pre>
+  <div *ngFor="let row of data | traverseJson">
+    <span>{{row.key}}</span>
+    <span>{{row.value | json}}</span>
+  </div>
+</div>
