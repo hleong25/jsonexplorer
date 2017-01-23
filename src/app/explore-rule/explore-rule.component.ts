@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreRuleComponent implements OnInit {
 
+  private rules: string = `{
+  "rooturl": "http://localhost:80/api/v1",
+  "exec": "/adm/hosts",
+  "rules": [
+    {
+      "match": "test",
+      "exec": '/adm/databases?filter=appServerId eq "returned.id"'
+    }
+  ]
+}
+`;
+
   constructor() { }
 
   ngOnInit() {
